@@ -1,12 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Doc</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      height: 100vh;
+      place-items: center;
+    }
+    .boxes {
+      display: flex;
+      gap: 20px;
+    }
+    .boxes :is(div) {
+      width: 100px;
+      height: 100px;
+    }
+    .red {
+      background: red;
+    }
+    .blue {
+      background: blue;
+    }
+    .green {
+      background: green;
+    }
+  </style>
 </head>
-
 <body>
-
-
-  
-  <p>This is a paragraph</p>
+  <div class="boxes">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+  </div>
 </body>
 </html>
